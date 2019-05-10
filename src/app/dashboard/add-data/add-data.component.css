@@ -1,0 +1,38 @@
+.example-card{
+    width: 396px;
+    margin-top: 67px;
+    margin-left: 476px;
+    height: 427px
+
+}
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+.mat-card-title{
+    margin-left: 129px;
+    font-family: cursive;
+    margin-bottom: 16px;
+
+}
+.registerHere{
+    font-family: cursive;
+    font-size: 14px;
+    margin-left: 60px;
+}
+.forgotPassword{
+    font-family: cursive;
+    margin-left: 228px;
+    color: black;
+
+}
+.matbtn{
+    margin-left: 148px;
+}
+
+  

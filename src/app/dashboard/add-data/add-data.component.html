@@ -1,0 +1,82 @@
+<mat-card class="example-card" >
+    <mat-card-header>
+      <mat-card-title>Add User Record</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <form class="example-form" [formGroup]="addForm">
+        <table class="example-full-width">
+            <tr>
+                <td>
+                  <mat-form-field class="example-full-width">
+                  <input matInput placeholder="Full Name" [(ngModel)]="addData.name" name="name" formControlName="name">
+                  <mat-error *ngIf="!addForm.get('name').valid">fullname cannot be empty</mat-error>
+                  </mat-form-field>
+                </td>
+              </tr>
+          <tr>
+            <td>
+              <mat-form-field class="example-full-width">
+              <input matInput placeholder="Email" [(ngModel)]="addData.email" name="email" formControlName="email">
+              <mat-error *ngIf="!addForm.get('email').valid">email cannot be empty</mat-error>
+              </mat-form-field>
+            </td>
+          </tr>
+          <tr>
+              <td>
+                <mat-form-field class="example-full-width">
+                <input matInput placeholder="Number" [(ngModel)]="addData.number" name="number" formControlName="number">
+                <mat-error *ngIf="!addForm.get('number').valid">number cannot be empty</mat-error>
+                </mat-form-field>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <mat-form-field class="example-full-width">
+  
+                  <textarea matInput placeholder="Address" 
+                    formControlName="address"></textarea>
+  
+                  <mat-error *ngIf="!addForm.get('address').valid">Address cannot be empty</mat-error>
+                </mat-form-field>
+              </td>
+            </tr>
+            <tr>
+              <td>
+          <mat-form-field class="example-full-width">
+              <input matInput [matDatepicker]="dob" readonly placeholder="Date of Birth"
+                formControlName="DOB" [max]="dateOfBirth">
+              <mat-datepicker-toggle matSuffix [for]="dob"></mat-datepicker-toggle>
+              <mat-datepicker #dob></mat-datepicker>
+              </mat-form-field>
+          </td>
+        </tr>
+          <tr>
+            <td>
+              <mat-form-field class="example-full-width">
+                <mat-select placeholder="Select Gender" formControlName="gender">
+                  <mat-option value="Male">Male</mat-option>
+                  <mat-option value="Female">Female</mat-option>
+                </mat-select>
+              </mat-form-field>
+            </td>
+          </tr>
+         
+      </table>
+      </form>
+      <mat-spinner [style.display]="showSpinner ? 'block' : 'none'"></mat-spinner>
+    </mat-card-content>
+    <mat-card-actions class="matbtn">
+        
+      <button style=" font-family: cursive;
+      width: 81px;color: white;
+    background: #3c8dbc" mat-raised-button (click)="Add()"  [disabled]="!addForm.valid">Add</button>
+    </mat-card-actions>
+  </mat-card>
+  <span>
+      <a routerLink="/dashboard/dashPanel" style="color:black;margin-left:864px;font-family: cursive;">back</a>
+    </span>
+
+  
+  
+  
+

@@ -1,0 +1,85 @@
+// table {
+//   width: 104%;
+//      margin-left: -13px;
+//     margin-top: 17px 
+//   }
+ 
+//   .mat-form-field {
+//     font-size: 14px;
+//     width: 30%;
+//     float: right;
+//     margin-top: -61px;
+//   }
+//   .example-card{
+//     width: 663px;
+//     margin-top: 96px;
+//     margin-left: 498px;
+//     height: 309px;
+// }
+// !!!!!!!!!!!!!!!!!!!!!!!!!!11
+
+
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 200px;
+  box-shadow: 3px 0 6px rgba(0, 0, 0, 0.24)
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: #3c8dbc;
+}
+.hidden{
+  display: none;
+}
+
+::ng-deep .mat-drawer-inner-container {
+  background: black;
+ 
+}
+
+::ng-deep .mat-menu-content:not(:empty){
+  padding: 16px;
+  margin-top: 14px;
+}
+::ng-deep .mat-drawer-inner-container {
+  width: 100%;
+  height: 100%;
+ 
+  overflow: hidden !important;
+}
+::ng-deep .mat-expansion-indicator::after {
+  color: white;
+}
+
+::ng-deep .mat-expansion-panel-body {
+  background: black;
+}
+/* .mat-toolbar-row, .mat-toolbar-single-row {
+    display: flex;
+    box-sizing: border-box;
+    padding: 0px 137px;
+    width: 101%;
+    flex-direction: row;
+    align-items: center;
+    white-space: nowrap;
+    margin-top: -6px;
+    background: #3f51b5;
+    height: 79px;
+}
+
+.example-container {
+  width: 400px;
+  height: 200px;
+  margin: 10px;
+  border: 1px solid #555;
+} */
